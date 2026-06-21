@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'out',
+  // Không dùng static export vì có Server Actions/genkit
+  // Thay vào đó sử dụng default SSR
   experimental: {
     optimizePackageImports: ["@radix-ui"],
   },
