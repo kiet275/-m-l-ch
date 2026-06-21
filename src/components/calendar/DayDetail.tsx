@@ -19,7 +19,14 @@ export function DayDetail({ date, onClose }: { date: Date; onClose: () => void }
 
   const containerVariants = {
     hidden: { y: "100%" },
-    visible: { y: 0, transition: { type: "spring", damping: 25, stiffness: 200 } },
+    visible: { 
+      y: 0, 
+      transition: { 
+        type: "spring" as const, 
+        damping: 25, 
+        stiffness: 200 
+      } 
+    },
     exit: { y: "100%" }
   };
 
