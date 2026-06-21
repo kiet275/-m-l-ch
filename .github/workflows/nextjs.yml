@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.next/standalone/public
+          path: ./out
 
   deploy:
     environment:
