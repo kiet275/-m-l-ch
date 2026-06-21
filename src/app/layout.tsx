@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   description: 'Vietnamese Lunar-Solar Calendar with AI Destiny Advisor',
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function RootLayout({
   children,
 }: Readonly<{
